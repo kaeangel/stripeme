@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
-<<script>
-  if (window.Telegram?.WebApp) {
-    Telegram.WebApp.ready();
-  }
-</script>>
+<head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Buy</title>
+  <title>Redirecting…</title>
+
+  <script>
+    if (window.Telegram?.WebApp) {
+      Telegram.WebApp.ready();
+    }
+
+    // redirect almost instantly
+    setTimeout(() => {
+      window.location.href = "https://buy.stripe.com/7sI4iidiJgjH06ccMM";
+    }, 300);
+  </script>
 </head>
-<body style="margin:0; display:flex; justify-content:center; align-items:center; background:#000;">
-  <a href="https://buy.stripe.com/7sI4iidiJgjH06ccMM" target="_blank">
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Stripe_Logo%2C_revised_2016.svg"
-      style="max-width:512px; width:100%;"
-      alt="Buy Now"
-    >
-  </a>
+<body style="background:#000; color:#fff; display:flex; justify-content:center; align-items:center; height:100vh;">
+  Redirecting to checkout…
 </body>
 </html>
